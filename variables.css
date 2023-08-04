@@ -1,0 +1,38 @@
+@layer theme {
+  :root {
+    /* ### Color palette */
+
+    /* Primary (green) */
+    --primary: hsl(160deg, 100%, 30%);
+    /* Secondary (gold) */
+    --secondary-lighter: hsl(45deg, 100%, 50%);
+    --secondary-darker: hsl(45deg, 100%, 40%);
+    /* Grays */
+    --black: hsl(0deg, 0%, 0%);
+    --very-dark: hsl(0deg, 0%, 10%);
+    --dark: hsl(0deg, 0%, 30%);
+    --medium: hsl(0deg, 0%, 40%);
+    --light: hsl(0deg, 0%, 60%);
+    --white: hsl(0deg, 0%, 100%);
+
+    /* ### Spacing */
+    --spacing-unit: 8px;
+    --spacing-1: calc(1 * var(--spacing-unit)); /* 8px */
+    --spacing-2: calc(2 * var(--spacing-unit)); /* 16px */
+    --spacing-3: calc(3 * var(--spacing-unit)); /* 24px */
+    --spacing-4: calc(4 * var(--spacing-unit)); /* 32px */
+    --spacing-5: calc(6 * var(--spacing-unit)); /* 48px */
+    --spacing-6: calc(8 * var(--spacing-unit)); /* 64px */
+    --spacing-7: calc(12 * var(--spacing-unit)); /* 96px */
+    --spacing-8: calc(16 * var(--spacing-unit)); /* 128px */
+
+    /* ### Font */
+    --font-family: 'Lato', sans-serif;
+
+    /* ### Font sizing */
+    --font-size-1: 1rem; /* 16px */
+    --font-size-2: 1.25rem; /* 20px */
+    --font-size-3: 1.5rem; /* 24px */
+    --font-size-4: 2rem; /* 32px */
+  }
+}
