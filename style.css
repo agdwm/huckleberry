@@ -70,7 +70,7 @@ main {
 
 @media (width >= 768px) {
   .intro-chunk p {
-    max-inline-size: 60%;
+    max-inline-size: 40ch;
   }
 }
 
