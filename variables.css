@@ -1,45 +1,46 @@
-:root {
-  /* ### Color palette */
+@layer theme {
+  :root {
+    /* ### Color palette */
 
-  /* Primary (green) */
-  --primary: hsl(160deg, 100%, 30%);
-  /* Secondary (gold) */
-  --secondary-lighter: hsl(45deg, 100%, 50%);
-  --secondary-darker: hsl(45deg, 100%, 40%);
-  /* Grays */
-  --black: hsl(0deg, 0%, 0%);
-  --very-dark: hsl(0deg, 0%, 10%);
-  --dark: hsl(0deg, 0%, 30%);
-  --medium: hsl(0deg, 0%, 40%);
-  --light: hsl(0deg, 0%, 60%);
-  --white: hsl(0deg, 0%, 100%);
+    /* Primary (green) */
+    --primary: hsl(160deg, 100%, 30%);
+    /* Secondary (gold) */
+    --secondary-lighter: hsl(45deg, 100%, 50%);
+    --secondary-darker: hsl(45deg, 100%, 40%);
+    /* Grays */
+    --black: hsl(0deg, 0%, 0%);
+    --very-dark: hsl(0deg, 0%, 10%);
+    --dark: hsl(0deg, 0%, 30%);
+    --medium: hsl(0deg, 0%, 40%);
+    --light: hsl(0deg, 0%, 60%);
+    --white: hsl(0deg, 0%, 100%);
 
-  /* ### Spacing */
-  --spacing-unit: 8px;
-  --spacing-1: calc(1 * var(--spacing-unit)); /* 8px */
-  --spacing-2: calc(2 * var(--spacing-unit)); /* 16px */
-  --spacing-3: calc(3 * var(--spacing-unit)); /* 24px */
-  --spacing-4: calc(4 * var(--spacing-unit)); /* 32px */
-  --spacing-5: calc(6 * var(--spacing-unit)); /* 48px */
-  --spacing-6: calc(8 * var(--spacing-unit)); /* 64px */
-  --spacing-7: calc(12 * var(--spacing-unit)); /* 96px */
-  --spacing-8: calc(16 * var(--spacing-unit)); /* 128px */
+    /* Spacing Relative units */
+    --base: 16;
+    --r8: calc((8 / var(--base) * 1rem)); /* 8px */
+    --r24: calc((24 / var(--base) * 1rem)); /* 24px */
+    --r32: calc((32 / var(--base) * 1rem)); /* 32px */
+    --r48: calc((48 / var(--base) * 1rem)); /* 48px */
+    --r64: calc((64 / var(--base) * 1rem)); /* 64px */
+    --r96: calc((96 / var(--base) * 1rem)); /* 96px */
+    --r128: calc((128 / var(--base) * 1rem)); /* 128px */
 
-  /* ### Font */
-  --font-family: 'Lato', sans-serif;
+    /* ### Font */
+    --font-family: 'Lato', sans-serif;
 
-  /* ### Font sizing */
-  --font-size-1: 1rem; /* 16px */
-  --font-size-2: 1.25rem; /* 20px */
-  --font-size-3: 1.5rem; /* 24px */
-  --font-size-4: 2rem; /* 32px */
+    /* ### Font sizing */
+    --font-size-1: 1rem; /* 16px */
+    --font-size-2: 1.25rem; /* 20px */
+    --font-size-3: 1.5rem; /* 24px */
+    --font-size-4: 2rem; /* 32px */
 
-  /* ### Breakpoints */
-  --xxs: 240px;
-  --xs: 360px;
-  --sm: 480px;
-  --md: 768px;
-  --lg: 1024px;
-  --xl: 1440px;
-  --xxl: 1920px;
+    /* ### Breakpoints */
+    --xxs: 240px;
+    --xs: 360px;
+    --sm: 480px;
+    --md: 768px;
+    --lg: 1024px;
+    --xl: 1440px;
+    --xxl: 1920px;
+  }
 }

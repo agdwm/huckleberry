@@ -13,11 +13,12 @@ body {
 
 body {
   line-height: 1.4;
+  color: var(--black);
 }
 
 p {
-  font-size: 1.25rem;
-  font-weight: 25rem;
+  font-size: var(--font-size-2);
+  font-weight: 400;
   margin-block-end: 1rem;
   margin-block-start: 1rem;
 }
@@ -28,52 +29,60 @@ strong {
 }
 
 main {
-  padding-block-start: var(--spacing-6);
-  padding-block-end: var(--spacing-6);
   background-color: var(--medium);
   border-block-start: 8px solid var(--light);
+  padding-block-end: var(--r64);
+  padding-block-start: var(--r64);
 }
 
 .intro-chunk {
-  margin-block-start: var(--spacing-7);
-  margin-block-end: var(--spacing-6);
-  padding-inline-start: var(--spacing-3);
-  padding-inline-end: var(--spacing-3);
+  margin-block-end: var(--r64);
+  margin-block-start: var(--r96);
+  padding-inline-end: var(--r24);
+  padding-inline-start: var(--r24);
 }
 
 .title {
-  margin-block-end: var(--spacing-5);
+  font-size: var(--font-size-4);
+  margin-block-end: var(--r48);
 }
 
 .card {
   background-color: var(--white);
   border-block-end: 8px solid var(--light);
-  padding: var(--spacing-1) var(--spacing-3);
+  padding: var(--r8) var(--r24);
 }
 
 .indented-heading {
-  inline-size: 100%;
-  line-height: 28.8px;
-  margin-block-end: var(--spacing-3);
-  margin-block-start: unset;
-  margin-inline-start: calc(var(--spacing-3) * -1);
-  padding: var(--spacing-1) var(--spacing-3);
   background-color: var(--secondary-lighter);
   box-shadow: 0px 8px 0px 0px var(--secondary-darker);
+  font-size: var(--font-size-3);
   inline-size: fit-content;
-
+  line-height: 28.8px;
+  margin-block-end: var(--r24);
+  margin-block-start: unset;
+  margin-inline-start: calc(var(--r24) * -1);
+  padding: var(--r8) var(--r24);
 }
 
-@media (width >= 1280px) {
+
+/* ===== MEDIA QUERIES ===== */
+
+@media (width >= 768px) {
+  .intro-chunk p {
+    max-inline-size: 60%;
+  }
+}
+
+@media (width >= 1024px) {
   .max-width-wrapper {
-    max-inline-size: 50rem;
-    margin-inline-start: auto;
     margin-inline-end: auto;
+    margin-inline-start: auto;
+    max-inline-size: 50rem;
   }
 
   .indented-heading {
-    padding: var(--spacing-1) var(--spacing-4);
-    margin-inline-start: calc(var(--spacing-4) * -1);
-
+    margin-inline-start: calc(var(--r32) * -1);
+    padding: var(--r8) var(--r32);
   }
 }
