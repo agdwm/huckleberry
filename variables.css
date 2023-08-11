@@ -18,6 +18,7 @@
     /* Spacing Relative units */
     --base: 16;
     --r8: calc((8 / var(--base) * 1rem)); /* 8px */
+    --r12: calc((12 / var(--base) * 1rem)); /* 12px */
     --r16: calc((16 / var(--base) * 1rem)); /* 16px */
     --r24: calc((24 / var(--base) * 1rem)); /* 24px */
     --r32: calc((32 / var(--base) * 1rem)); /* 32px */

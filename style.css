@@ -35,11 +35,18 @@ main {
   padding-block-start: var(--r64);
 }
 
+.max-width-wrapper {
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  max-inline-size: 50rem;
+}
+
 .intro-chunk {
   margin-block-end: var(--r64);
   margin-block-start: var(--r96);
   padding-inline-end: var(--r24);
   padding-inline-start: var(--r24);
+  max-inline-size: 40ch;
 }
 
 .title {
@@ -50,7 +57,7 @@ main {
 .card {
   background-color: var(--white);
   border-block-end: 8px solid var(--light);
-  padding: var(--r8) var(--r24);
+  padding: var(--r16) var(--r24);
 }
 
 .indented-heading {
@@ -60,29 +67,7 @@ main {
   inline-size: fit-content;
   line-height: calc(1em + 0.5rem);
   margin-block-end: var(--r24);
-  margin-block-start: unset;
-  margin-inline-start: calc(var(--r24) * -1);
-  padding: var(--r8) var(--r24);
-}
-
-
-/* ===== MEDIA QUERIES ===== */
-
-@media (width >= 768px) {
-  .intro-chunk p {
-    max-inline-size: 40ch;
-  }
-}
-
-@media (width >= 1024px) {
-  .max-width-wrapper {
-    margin-inline-end: auto;
-    margin-inline-start: auto;
-    max-inline-size: 50rem;
-  }
-
-  .indented-heading {
-    margin-inline-start: calc(var(--r32) * -1);
-    padding: var(--r8) var(--r32);
-  }
+  margin-block-start: -8px;
+  margin-inline-start: calc(var(--r32) * -1);
+  padding: var(--r16) var(--r32);
 }
